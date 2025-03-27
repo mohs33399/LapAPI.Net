@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/API/Images/Teacher/c0a799769c85d5308a702d240c9ecb60.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Teacher\c0a799769c85d5308a702d240c9ecb60.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OxCbpMEYeajHwNEcYGjivkaW5p0DD\u002BnbiYVBwWqtNjY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"33343"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022OxCbpMEYeajHwNEcYGjivkaW5p0DD\u002BnbiYVBwWqtNjY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Mar 2025 13:10:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/API/Images/Teacher/c0a799769c85d5308a702d240c9ecb60.lwrqwctdou.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Teacher\c0a799769c85d5308a702d240c9ecb60.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lwrqwctdou"},{"Name":"integrity","Value":"sha256-OxCbpMEYeajHwNEcYGjivkaW5p0DD\u002BnbiYVBwWqtNjY="},{"Name":"label","Value":"_content/API/Images/Teacher/c0a799769c85d5308a702d240c9ecb60.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33343"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022OxCbpMEYeajHwNEcYGjivkaW5p0DD\u002BnbiYVBwWqtNjY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Mar 2025 13:10:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

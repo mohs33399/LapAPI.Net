@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+@using School.ViewModels;
+@using School.ViewModels.Theacher
+@model AddTeacherViewModel
+
+<h1>Add New Teacher</h1>
+
+<form asp-action="add" asp-controller="Teacher" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label class="form-label" asp-for="Name"></label>
+        <input class="form-control" asp-for="Name" />
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Subject"></label>
+        <textarea class="form-control" asp-for="Subject"></textarea>
+        <span class="text-danger" asp-validation-for="Subject"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Email"></label>
+        <input class="form-control" asp-for="Email" />
+        <span class="text-danger" asp-validation-for="Email"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="Phone"></label>
+        <input class="form-control" asp-for="Phone" />
+        <span class="text-danger" asp-validation-for="Phone"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" asp-for="TeacherAttachments"></label>
+        <input accept="image/*" class="form-control" asp-for="TeacherAttachments" />
+        <span class="text-danger" asp-validation-for="TeacherAttachments"></span>
+    </div>
+
+
+
+    <input class="btn btn-primary" type="submit" value="Add New Teacher"   />
+</form>

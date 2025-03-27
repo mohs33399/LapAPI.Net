@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "kdcnN9/8kRaxni/oOMyl6VvD9pWMHpBPmNLxiyoenfU=",
+  "Source": "API",
+  "BasePath": "_content/API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "C:\\Users\\mmss9\\Desktop\\MVC\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\mmss9\\Desktop\\MVC\\API\\wwwroot\\Images\\Teacher\\c0a799769c85d5308a702d240c9ecb60.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mmss9\\Desktop\\MVC\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "Images/Teacher/c0a799769c85d5308a702d240c9ecb60#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lwrqwctdou",
+      "Integrity": "OxCbpMEYeajHwNEcYGjivkaW5p0DD+nbiYVBwWqtNjY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Teacher\\c0a799769c85d5308a702d240c9ecb60.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Images/Teacher/c0a799769c85d5308a702d240c9ecb60.jpg",
+      "AssetFile": "C:\\Users\\mmss9\\Desktop\\MVC\\API\\wwwroot\\Images\\Teacher\\c0a799769c85d5308a702d240c9ecb60.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OxCbpMEYeajHwNEcYGjivkaW5p0DD+nbiYVBwWqtNjY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 13:10:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OxCbpMEYeajHwNEcYGjivkaW5p0DD+nbiYVBwWqtNjY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Teacher/c0a799769c85d5308a702d240c9ecb60.lwrqwctdou.jpg",
+      "AssetFile": "C:\\Users\\mmss9\\Desktop\\MVC\\API\\wwwroot\\Images\\Teacher\\c0a799769c85d5308a702d240c9ecb60.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OxCbpMEYeajHwNEcYGjivkaW5p0DD+nbiYVBwWqtNjY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Mar 2025 13:10:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lwrqwctdou"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Teacher/c0a799769c85d5308a702d240c9ecb60.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OxCbpMEYeajHwNEcYGjivkaW5p0DD+nbiYVBwWqtNjY="
+        }
+      ]
+    }
+  ]
+}

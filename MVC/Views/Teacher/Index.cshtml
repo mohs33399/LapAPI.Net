@@ -1,0 +1,90 @@
+﻿
+
+
+@{
+    Layout = "_AdminLayout";
+    bool canNext = !(Model.PageNumber * Model.PageSize < Model.Total);
+    bool canBack = Model.PageNumber <= 1;
+
+    int PageCountabdelkhalk = (int)Math.Ceiling((double)Model.Total / Model.PageSize);
+    int PageCountosama = (int)(Model.Total / Model.PageSize) + (int)(Model.Total % Model.PageSize);
+
+
+}
+@using School.ViewModels;
+@using School.ViewModels.Theacher
+@model PaginationViewModel<TeacherDetailsViewModel>
+
+<h1>Teacher List</h1>
+
+<form class="row g-3" asp-action="index" asp-controller="Teacher" method="get">
+
+    <div class="col-md-4">
+        <label>Search Text</label>
+        <input type="text" class="form-control" name="searchText">
+    </div>
+    <div class="col-md-4">
+        <label>Price</label>
+        <input type="number" class="form-control" name="Price">
+    </div>
+
+    <input hidden name="pagenumber" value="@Model.PageNumber" />
+    <input type="submit" class="btn btn-success" name="Filter">
+
+
+</form>
+
+<div class="container">
+    <div class="row">
+        @foreach (var prd in Model.Data)
+        {
+
+            <div class="card col-4">
+               @if (prd.Images != null && prd.Images.Count >= 1) 
+  { 
+      <img src="@prd.Images[0]" class="card-img-top" alt="..."> 
+ } 
+
+<div class="card-body">
+    <h5 class="card-title">@prd.Name</h5>
+    <p class="card-text">@prd.Subject</p>
+    <p class="card-text">@prd.Email $</p>
+    <p class="card-text">@prd.Phone</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+</div>
+            </div>
+        }
+    </div>
+<div class="d-flex justify-content-center align-items-center">
+        <!-- Back Button -->
+        <button class="btn btn-primary me-2" onclick="changePage(@(Model.PageNumber - 1))" disabled="@canBack">
+            Back
+        </button>
+
+        <!-- Page Numbers -->
+        @for (int i = 1; i <= PageCountabdelkhalk; i++)
+        {
+            <button class="btn @(Model.PageNumber == i ? "btn-dark" : "btn-outline-primary") me-1"
+                    onclick="changePage(@i)">
+                @i
+            </button>
+        }
+
+        <!-- Next Button -->
+        <button class="btn btn-primary ms-2" onclick="changePage(@(Model.PageNumber + 1))" disabled="@canNext">
+            Next
+        </button>
+    </div>
+
+    @section scripts {
+        <script>
+            let form = document.getElementsByTagName("form")[0];
+
+            function changePage(pageNumber) {
+                form.pagenumber.value = pageNumber;
+                form.submit();
+            }
+        </script>
+    }
+
+
